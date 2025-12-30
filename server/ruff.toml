@@ -1,0 +1,24 @@
+# Ruff Configuration
+# https://docs.astral.sh/ruff/
+
+line-length = 88
+target-version = "py311"
+
+[lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # Pyflakes
+    "I",   # isort
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+]
+ignore = [
+    "E501",  # Line too long (handled by formatter)
+]
+
+[lint.per-file-ignores]
+"tests/*" = ["S101"]     # Allow assert in tests
+"scripts/*" = ["T201"]   # Allow print in scripts
+
+[lint.isort]
+known-first-party = ["app"]
