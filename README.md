@@ -2,6 +2,7 @@
 
 > AI-powered diabetes risk screening trained on 70,000+ clinical records
 
+[![CI](https://github.com/mamaw-coders/diabetes-risk-assessment/actions/workflows/ci.yml/badge.svg)](https://github.com/mamaw-coders/diabetes-risk-assessment/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-3.0-green.svg)](https://flask.palletsprojects.com)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple.svg)](https://getbootstrap.com)
@@ -108,7 +109,7 @@ Open `http://localhost:3000`
 
 ## Team
 
-**Mamaw Coders** – CSST 101 Final Project
+**Mamaw Coders** – CSST 102 Final Project
 
 ## Disclaimer
 
@@ -116,4 +117,4 @@ This tool is for educational purposes only. It is not a substitute for professio
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
