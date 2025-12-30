@@ -1,6 +1,6 @@
 # Diabetes Risk Assessment AI – Product Requirements Document (PRD)
 
-**Course:** CSST 101  
+**Course:** CSST 102  
 **Project:** Diabetes Risk Assessment AI (Sprint Edition)
 
 ---
