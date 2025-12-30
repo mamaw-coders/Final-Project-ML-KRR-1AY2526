@@ -45,6 +45,9 @@ class DiabetesModel:
         """
         Load the trained model from disk.
         
+        Supports both raw model files and the new format with metadata.
+        New format: dict with 'model', 'feature_order', 'metrics' keys.
+        
         Raises:
             FileNotFoundError: If model file doesn't exist
             Exception: If model fails to load
@@ -60,11 +63,23 @@ class DiabetesModel:
                 self._model = None
                 return
             
-            self._model = joblib.load(model_path)
-            current_app.logger.info(f"Model loaded successfully from {model_path}")
+            model_data = joblib.load(model_path)
+            
+            # Handle new format with metadata
+            if isinstance(model_data, dict) and "model" in model_data:
+                self._model = model_data["model"]
+                current_app.logger.info(
+                    f"Model loaded from {model_path} "
+                    f"(trained at: {model_data.get('trained_at', 'unknown')})"
+                )
+            else:
+                # Backwards compatibility: raw model file
+                self._model = model_data
+                current_app.logger.info(f"Model loaded successfully from {model_path}")
             
         except Exception as e:
             current_app.logger.error(f"Error loading model: {str(e)}")
+            self._model = None
             self._model = None
     
     def predict(self, features: np.ndarray) -> int:
