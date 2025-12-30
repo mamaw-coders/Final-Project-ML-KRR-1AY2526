@@ -1,0 +1,110 @@
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===========================
+# Virtual Environments
+# ===========================
+venv/
+ENV/
+env/
+.venv/
+
+# ===========================
+# Environment Variables
+# ===========================
+.env
+.env.local
+.env.*.local
+*.env
+
+# ===========================
+# ML Artifacts (Large Files)
+# ===========================
+# NOTE: model.pkl (~37MB) is INCLUDED in git for team collaboration.
+# This is acceptable for academic projects. For production, consider:
+# - Git LFS (git-lfs.github.com)
+# - Cloud storage (S3, GCS)
+# - DVC (dvc.org)
+#
+# To exclude in future, uncomment these lines:
+# server/artifacts/*.pkl
+# server/artifacts/*.joblib
+# *.h5
+# *.hdf5
+# *.onnx
+
+# ===========================
+# IDE / Editors
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# ===========================
+# OS Generated
+# ===========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===========================
+# Testing / Coverage
+# ===========================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+
+# ===========================
+# Jupyter Notebooks
+# ===========================
+.ipynb_checkpoints/
+*.ipynb
+
+# ===========================
+# Logs
+# ===========================
+*.log
+logs/
+
+# ===========================
+# Temporary Files
+# ===========================
+tmp/
+temp/
+*.tmp
+*.bak
