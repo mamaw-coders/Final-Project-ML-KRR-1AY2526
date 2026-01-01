@@ -1,7 +1,24 @@
-/* ===================================
-   DIABETES RISK ASSESSMENT AI
-   Premium Medical Theme CSS
-   =================================== */
+/* ============================================================================
+   GLUCOSENSE - AI HEALTH RISK ASSESSMENT
+   Premium Medical Theme Stylesheet
+   ============================================================================
+   
+   TABLE OF CONTENTS
+   -----------------
+   1. VARIABLES & BASE        (Line ~35)   - CSS custom properties, resets
+   2. COMPONENTS              (Line ~77)   - Navbar, buttons, cards  
+   3. HERO SECTION            (Line ~110)  - Landing area, image collage
+   4. HOW IT WORKS            (Line ~236)  - 3-step explanation cards
+   5. ABOUT SECTION           (Line ~281)  - Benefits and description
+   6. ASSESSMENT WIZARD       (Line ~324)  - Multi-step form, progress
+   7. FORM ELEMENTS           (Line ~445)  - Inputs, toggles, sliders
+   8. RESULTS VIEW            (Line ~855)  - Risk display, factors
+   9. FAQ SECTION             (Line ~1072) - Accordion styles
+   10. FOOTER                 (Line ~1128) - Site footer
+   11. RESPONSIVE             (Line ~1161) - Mobile breakpoints
+   12. PRINT STYLES           (Line ~1226) - Print-specific rules
+   
+   ============================================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
